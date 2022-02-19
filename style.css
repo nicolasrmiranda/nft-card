@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    width: 240px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0px 20px 10px hsl(214, 70%, 8%);
+}
+
+.nft {
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 5px;
+    background-image: url(img/icon-view.svg);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    height: 210px;
+}
+
+.nft img {
+    width: 210px;
+    border-radius: 3px;
+}
+
+.nft img:hover {
+    opacity: 50%;
+    transition: .5s;
+}
+
+.texts {
+    width: 210px;
+    height: auto;
+}
+
+.texts h3 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 15px 0px 15px 0px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.texts h3:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.texts p {
+    font-size: 0.75rem;
+    color: hsl(0, 0%, 100%);
+    opacity: 60%;
+    font-weight: 100;
+}
+
+.inf {
+    margin: 15px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price img {
+    width: 7px;
+    margin: 0px 5px 0px 0px;
+}
+
+.price p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.days {
+    display: flex;
+    align-items: center;
+}
+
+.days img {
+    width: 12px;
+    margin: 0px 5px 0px 0px;
+}
+
+.days p {
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+    opacity: 60%;
+}
+
+.line {
+    border-bottom: 1px solid rgba(156, 156, 156, 0.404);
+    opacity: 40%;
+    border-radius: 10px;
+    margin: 15px 0px 15px 0px;
+}
+
+.footer-nft {
+    width: 210px;
+    display: flex;
+    align-items: center;  
+}
+
+.footer-nft img {
+    width: 25px;
+    outline: 1px solid #fff;
+    border-radius: 50px;
+    margin: 0px 10px 0px 0px;
+}
+
+.footer-nft p {
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 50%);
+}
+
+.footer-nft p span {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.footer-nft p span:hover {
+    color: hsl(178, 100%, 50%);
+    transition: .5s;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    color: hsl(0, 0%, 100%);
+    opacity: 20%;
+    font-weight: 300;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 320px;
+        height: 520px;
+    }
+
+    .nft {
+        margin-top: 20px;
+        height: auto;
+        background-color: transparent;
+    }
+    
+    .nft img {
+        width: 270px;
+        border-radius: 10px;
+    }
+    
+    .nft img:hover {
+        opacity: 100%
+    }
+
+    .texts {
+        width: 270px;
+        height: auto;
+    }
+    
+    .texts h3 {
+        font-size: 1.2rem;
+
+    }
+       
+    .texts p {
+        font-size: 0.85rem;
+    }
+
+    .price img {
+        width: 10px;
+    }
+    
+    .price p {
+        color: hsl(178, 100%, 50%);
+        border: 1px solid transparent;
+        font-size: 1rem;
+    }
+
+    .days img {
+        width: 20px; 
+    }
+    
+    .days p {
+        font-size: 1rem;
+    }
+
+    .line {
+        border-bottom: 2px solid rgba(156, 156, 156, 0.404);
+    }
+    
+    .footer-nft {
+        width: 270px;
+    }
+    
+    .footer-nft img {
+        width: 30px;
+        outline: 1px solid #fff;
+        border-radius: 50px;
+        margin: 0px 10px 0px 0px;
+    }
+    
+    .footer-nft p {
+        font-size: 1rem;
+    }
+}
